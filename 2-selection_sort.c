@@ -6,20 +6,18 @@
  */
 void selection_sort(int *array, size_t size)
 {
-int min, temp, index;
-size_t i, m;
+int min, temp;
+size_t i, m, index;
 for (i = 0; i < size - 1; i++)
 {
-m = i;
-min = array[m];
-while (m < size)
+min = array[i];
+for (m = i; m < size; m++)
 {
 if (array[m] < min)
 {
 min = array[m];
 index = m;
 }
-m++;
 }
 if (array[i] > array[index])
 {
