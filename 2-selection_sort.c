@@ -20,7 +20,7 @@ min = array[m];
 index = m;
 }
 }
-if (array[i] > array[index])
+if (index != i)
 {
 temp = array[i];
 array[i] = min;
