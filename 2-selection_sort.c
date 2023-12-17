@@ -10,8 +10,9 @@ int min, temp;
 size_t i, m, index;
 for (i = 0; i < size - 1; i++)
 {
+index = i;
 min = array[i];
-for (m = i; m < size; m++)
+for (m = i + 1; m < size; m++)
 {
 if (array[m] < min)
 {
