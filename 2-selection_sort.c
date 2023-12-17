@@ -23,7 +23,7 @@ index = m;
 if (index != i)
 {
 temp = array[i];
-array[i] = min;
+array[i] = array[index];
 array[index] = temp;
 print_array(array, size);
 }
