@@ -8,6 +8,8 @@ void shell_sort(int *array, size_t size)
 {
 int temp;
 size_t f, e, g = 1;
+if (array == NULL || size < 2)
+return;
 while (g <= size / 3)
 {
 g = g * 3 + 1;
@@ -29,3 +31,6 @@ g = (g - 1) / 3;
 print_array(array, size);
 }
 }
+
+
+
