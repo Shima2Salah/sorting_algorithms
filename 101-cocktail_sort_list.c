@@ -42,10 +42,9 @@ void cocktail_sort_list(listint_t **list)
 {
 int swapped;
 listint_t *current;
-
-
-if (*list == NULL || (*list)->next == NULL)
+if (!list || !*list || !(*list)->next)
 return;
+
 do {
 swapped = 0;
 current = *list;
