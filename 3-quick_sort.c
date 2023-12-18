@@ -6,6 +6,7 @@
  * @low: min list index
  * @high: max list index
  * @size: Size of array
+ * Return: integer
  */
 int partitioning(int *array, int low, int high, size_t size)
 {
