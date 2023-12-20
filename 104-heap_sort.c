@@ -61,11 +61,12 @@ start--;
  */
 void heap_sort(int *array, size_t size)
 {
+int end;
 if (array == NULL || size < 2)
 return;
 
 heapify_arr(array, size);
-for (int end = size - 1; end > 0; end--)
+for (end = size - 1; end > 0; end--)
 {
 swap_memb(&array[0], &array[end]);
 print_array(array, size);
